@@ -6,8 +6,9 @@ import (
 
 	"github.com/lpxxn/gomicrorpc/grpcexample/common"
 	model "github.com/lpxxn/gomicrorpc/grpcexample/proto"
-	"github.com/micro/go-micro"
-	"github.com/micro/go-micro/server/grpc"
+	"github.com/micro/go-micro/v2"
+	"github.com/micro/go-micro/v2/server/grpc"
+	_ "github.com/micro/go-plugins/registry/consul"
 )
 
 type Say struct{}

@@ -7,9 +7,9 @@ import (
 
 	"github.com/lpxxn/gomicrorpc/grpcexample/common"
 	model "github.com/lpxxn/gomicrorpc/grpcexample/proto"
-	"github.com/micro/go-micro"
-	"github.com/micro/go-micro/client/grpc"
-	"github.com/micro/go-micro/registry"
+	"github.com/micro/go-micro/v2"
+	"github.com/micro/go-micro/v2/client/grpc"
+	"github.com/micro/go-micro/v2/registry"
 )
 
 func main() {

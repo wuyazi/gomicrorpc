@@ -1,6 +1,7 @@
 syntax = "proto3";
 
-package model;
+package gomicrorpc.grpcexample.model;
+option go_package = "github.com/lpxxn/gomicrorpc/grpcexample/model";
 
 message SayParam {
     string msg = 1;

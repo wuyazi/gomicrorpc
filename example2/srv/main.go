@@ -5,9 +5,9 @@ import (
 	"github.com/lpxxn/gomicrorpc/example2/handler"
 	"github.com/lpxxn/gomicrorpc/example2/proto/rpcapi"
 	"github.com/lpxxn/gomicrorpc/example2/subscriber"
-	"github.com/micro/go-micro"
-	"github.com/micro/go-micro/registry"
-	"github.com/micro/go-micro/server"
+	"github.com/micro/go-micro/v2"
+	"github.com/micro/go-micro/v2/registry"
+	"github.com/micro/go-micro/v2/server"
 	"github.com/micro/go-plugins/registry/etcdv3"
 	"time"
 )
