@@ -5,7 +5,7 @@ import (
 	"fmt"
 	_ "github.com/asim/go-micro/plugins/registry/consul/v3"
 	"github.com/asim/go-micro/v3"
-	"github.com/lpxxn/gomicrorpc/example1/proto"
+	"github.com/wuyazi/gomicrorpc/example1/proto"
 )
 
 type Say struct{}

@@ -6,10 +6,10 @@ import (
 	_ "github.com/asim/go-micro/plugins/registry/consul/v3"
 	"github.com/asim/go-micro/v3"
 	"github.com/asim/go-micro/v3/client"
-	"github.com/lpxxn/gomicrorpc/example2/common"
-	"github.com/lpxxn/gomicrorpc/example2/lib"
-	"github.com/lpxxn/gomicrorpc/example2/proto/model"
-	"github.com/lpxxn/gomicrorpc/example2/proto/rpcapi"
+	"github.com/wuyazi/gomicrorpc/example2/common"
+	"github.com/wuyazi/gomicrorpc/example2/lib"
+	"github.com/wuyazi/gomicrorpc/example2/proto/model"
+	"github.com/wuyazi/gomicrorpc/example2/proto/rpcapi"
 	"io"
 	"os"
 	"os/signal"
@@ -100,6 +100,6 @@ func TsBidirectionalStream(client rpcapi.SayService) {
 }
 
 func NotifyTopic(service micro.Service) {
-	p := micro.NewPublisher(common.Topic1, service.Client())
+	p := micro.NewEvent(common.Topic1, service.Client())
 	p.Publish(context.TODO(), &model.SayParam{Msg: lib.RandomStr(lib.Random(3, 10))})
 }

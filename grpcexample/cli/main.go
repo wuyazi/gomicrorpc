@@ -9,8 +9,8 @@ import (
 	_ "github.com/asim/go-micro/plugins/registry/consul/v3"
 	"github.com/asim/go-micro/v3"
 	"github.com/asim/go-micro/v3/registry"
-	"github.com/lpxxn/gomicrorpc/grpcexample/common"
-	"github.com/lpxxn/gomicrorpc/grpcexample/proto"
+	"github.com/wuyazi/gomicrorpc/grpcexample/common"
+	"github.com/wuyazi/gomicrorpc/grpcexample/proto"
 )
 
 func main() {

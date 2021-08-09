@@ -4,10 +4,10 @@ import (
 	_ "github.com/asim/go-micro/plugins/registry/consul/v3"
 	"github.com/asim/go-micro/v3"
 	"github.com/asim/go-micro/v3/server"
-	"github.com/lpxxn/gomicrorpc/example2/common"
-	"github.com/lpxxn/gomicrorpc/example2/handler"
-	"github.com/lpxxn/gomicrorpc/example2/proto/rpcapi"
-	"github.com/lpxxn/gomicrorpc/example2/subscriber"
+	"github.com/wuyazi/gomicrorpc/example2/common"
+	"github.com/wuyazi/gomicrorpc/example2/handler"
+	"github.com/wuyazi/gomicrorpc/example2/proto/rpcapi"
+	"github.com/wuyazi/gomicrorpc/example2/subscriber"
 	"time"
 )
 

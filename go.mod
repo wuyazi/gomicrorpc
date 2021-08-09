@@ -1,4 +1,4 @@
-module github.com/lpxxn/gomicrorpc
+module github.com/wuyazi/gomicrorpc
 
 go 1.16
 
@@ -19,4 +19,4 @@ replace github.com/asim/go-micro/plugins/server/grpc/v3 => ../go-micro/plugins/s
 
 replace github.com/asim/go-micro/v3 => ../go-micro
 
-replace github.com/lpxxn/gomicrorpc => ../gomicrorpc
+replace github.com/wuyazi/gomicrorpc => ../gomicrorpc

@@ -3,9 +3,9 @@ package handler
 import (
 	"context"
 	"fmt"
-	"github.com/lpxxn/gomicrorpc/example2/lib"
-	"github.com/lpxxn/gomicrorpc/example2/proto/model"
-	"github.com/lpxxn/gomicrorpc/example2/proto/rpcapi"
+	"github.com/wuyazi/gomicrorpc/example2/lib"
+	"github.com/wuyazi/gomicrorpc/example2/proto/model"
+	"github.com/wuyazi/gomicrorpc/example2/proto/rpcapi"
 	"io"
 	"time"
 )
