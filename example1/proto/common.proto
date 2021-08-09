@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-package model;
+package proto;
+
+option go_package = "../proto";
 
 message SayParam {
     string msg = 1;
