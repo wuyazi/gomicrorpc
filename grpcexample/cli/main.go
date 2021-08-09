@@ -5,11 +5,12 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/asim/go-micro/plugins/client/grpc/v3"
+	_ "github.com/asim/go-micro/plugins/registry/consul/v3"
+	"github.com/asim/go-micro/v3"
+	"github.com/asim/go-micro/v3/registry"
 	"github.com/lpxxn/gomicrorpc/grpcexample/common"
-	model "github.com/lpxxn/gomicrorpc/grpcexample/proto"
-	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-micro/v2/client/grpc"
-	"github.com/micro/go-micro/v2/registry"
+	"github.com/lpxxn/gomicrorpc/grpcexample/proto"
 )
 
 func main() {
@@ -22,9 +23,9 @@ func main() {
 		options.Timeout = time.Second * 2
 	})
 
-	sayClent := model.NewSayService(common.GrpcExampleName, service.Client())
+	sayClent := proto.NewSayService(common.GrpcExampleName, service.Client())
 
-	rsp, err := sayClent.Hello(context.Background(), &model.SayParam{Msg: "hello server"})
+	rsp, err := sayClent.Hello(context.Background(), &proto.SayParam{Msg: "hello server"})
 	if err != nil {
 		panic(err)
 	}
