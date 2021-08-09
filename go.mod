@@ -7,9 +7,6 @@ require (
 	github.com/asim/go-micro/plugins/registry/consul/v3 v3.0.0-20210804083901-3e0411a3f61b
 	github.com/asim/go-micro/plugins/server/grpc/v3 v3.0.0-20210804083901-3e0411a3f61b
 	github.com/asim/go-micro/v3 v3.5.2
-	github.com/golang/protobuf v1.5.2
-	github.com/micro/go-micro/v2 v2.9.1
-	github.com/micro/go-plugins/registry/etcdv3 v0.0.0-20200119172437-4fe21aa238fd
 	google.golang.org/grpc/examples v0.0.0-20210806175644-574137db7de3 // indirect
 	google.golang.org/protobuf v1.27.1
 )
@@ -21,3 +18,5 @@ replace github.com/asim/go-micro/plugins/registry/consul/v3 => ../go-micro/plugi
 replace github.com/asim/go-micro/plugins/server/grpc/v3 => ../go-micro/plugins/server/grpc
 
 replace github.com/asim/go-micro/v3 => ../go-micro
+
+replace github.com/lpxxn/gomicrorpc => ../gomicrorpc
