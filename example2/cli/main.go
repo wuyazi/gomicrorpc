@@ -13,6 +13,7 @@ import (
 	"io"
 	"os"
 	"os/signal"
+	"time"
 )
 
 func main() {
@@ -27,8 +28,11 @@ func main() {
 
 	SayHello(sayClient)
 	NotifyTopic(service)
-	GetStreamValues(sayClient)
-	TsBidirectionalStream(sayClient)
+	for {
+		GetStreamValues(sayClient)
+		time.Sleep(time.Second)
+	}
+	//TsBidirectionalStream(sayClient)
 
 	st := make(chan os.Signal)
 	signal.Notify(st, os.Interrupt)
@@ -56,13 +60,10 @@ func GetStreamValues(client rpcapi.SayService) {
 	idx := 1
 	for {
 		rsp, err := rspStream.Recv()
-
-		if err == io.EOF {
+		if err != nil {
+			fmt.Println("---- recv err", err)
 			break
-		} else if err != nil {
-			panic(err)
 		}
-
 		fmt.Printf("test stream get idx %d  data  %v\n", idx, rsp)
 		idx++
 	}

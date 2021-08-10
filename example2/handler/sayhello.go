@@ -41,11 +41,13 @@ func (s *Say) Stream(ctx context.Context, req *model.SRequest, stream rpcapi.Say
 		for j := lib.Random(3, 5); j < 10; j++ {
 			rsp.Value = append(rsp.Value, lib.RandomStr(lib.Random(3, 10)))
 		}
-		if err := stream.Send(rsp); err != nil {
+		err := stream.Send(rsp)
+		if err != nil {
 			return err
 		}
+		fmt.Printf("test stream send idx %d  data  %v\n", i, rsp)
 		// 模拟处理过程
-		time.Sleep(time.Microsecond * 50)
+		time.Sleep(time.Millisecond * 500)
 	}
 	return nil
 }
