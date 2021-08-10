@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package rpcapi;
 
-option go_package = "../rpcapi";
+option go_package = "example2/proto/rpcapi";
 
-import "github.com/lpxxn/gomicrorpc/example2/proto/model/common.proto";
+import "github.com/wuyazi/gomicrorpc/example2/proto/model/common.proto";
 
 // 服务接口
 service Say {

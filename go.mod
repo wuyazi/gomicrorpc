@@ -18,5 +18,3 @@ replace github.com/asim/go-micro/plugins/registry/consul/v3 => ../go-micro/plugi
 replace github.com/asim/go-micro/plugins/server/grpc/v3 => ../go-micro/plugins/server/grpc
 
 replace github.com/asim/go-micro/v3 => ../go-micro
-
-replace github.com/wuyazi/gomicrorpc => ../gomicrorpc
