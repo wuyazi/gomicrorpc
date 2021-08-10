@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package model;
 
-option go_package = "example2/proto/model";
+option go_package = "github.com/wuyazi/gomicrorpc/example2/proto/model";
 
 message SayParam {
     string msg = 1;

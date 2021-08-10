@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package rpcapi;
 
-option go_package = "example2/proto/rpcapi";
+option go_package = "github.com/wuyazi/gomicrorpc/example2/proto/rpcapi";
 
 import "github.com/wuyazi/gomicrorpc/example2/proto/model/common.proto";
 
